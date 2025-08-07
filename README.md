@@ -27,14 +27,20 @@ The Quadtree Fabric is constituted by a modular architecture that provides a rob
 
 ## 3. Installation
 
-Ensure you have Python 3.12 or newer installed on your system.
+Ensure you have Python 3.12 or newer installed on your system. These instructions assume you are installing from the project's source code directory.
 
 ### 3.1. Standard Installation
 
-Install the application and its core dependencies from the Python Package Index (PyPI):
+From the root directory of this project, run the following command to install the application and its core dependencies:
 
 ```
-pip install quadtree-fabric
+pip install .
+```
+
+For development, it is recommended to use "editable" mode, which allows your code changes to be reflected immediately without reinstalling:
+
+```
+pip install -e .
 ```
 
 ### 3.2. Full Installation (with Optional Dependencies)
@@ -42,7 +48,7 @@ pip install quadtree-fabric
 For enhanced functionality, such as more robust Python session snapshotting, install the application with the `[full]` option:
 
 ```
-pip install quadtree-fabric[full]
+pip install -e .[full]
 ```
 
 ## 4. Usage
